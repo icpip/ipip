@@ -9,10 +9,11 @@
 <hr>
 <div style="text-align:center " ><h1 style="color:red;" id="myDiv"></h1></div>
 <div style="text-align:center " ><img src="chaojiwudidahuangtu.gif"></div>
+<div style="text-align:center " ><h3 style="color:red;">Domain Sell email:icpip@outlook.com</h3></div>
 </body>
 <script type="text/javascript">
 $(document).ready(function(){
-  htmlobj=$.ajax({url:"https://api.lwl12.com/hitokoto/main/get",async:false});
+  htmlobj=$.ajax({url:"https://api.lwl12.com/hitokoto/v1",async:false});
   $("#myDiv").html(htmlobj.responseText);
 });
 </script>
