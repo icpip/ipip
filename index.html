@@ -1,0 +1,19 @@
+</html>
+<html>
+<head>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+<div style="text-align:center " ><img src="ipip.png"></div>
+<hr>
+<div style="text-align:center " ><h1 style="color:red;" id="myDiv"></h1></div>
+<div style="text-align:center " ><img src="chaojiwudidahuangtu.gif"></div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  htmlobj=$.ajax({url:"https://api.lwl12.com/hitokoto/main/get",async:false});
+  $("#myDiv").html(htmlobj.responseText);
+});
+</script>
+</html>
